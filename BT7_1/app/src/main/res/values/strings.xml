@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">BT7_1</string>
-    <string name="heading">Accessing data of Content Provider</string>
-    <string name="loadButtonText">Load Data</string>
-</resources>
