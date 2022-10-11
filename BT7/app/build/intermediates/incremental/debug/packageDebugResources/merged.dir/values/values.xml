@@ -8,10 +8,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">BT7</string>
-    <string name="heading">Content Provider</string>
-    <string name="hintText">Enter User Name</string>
-    <string name="insertButtontext">Insert Data</string>
-    <string name="loadButtonText">Load Data</string>
     <style name="Theme.BT7" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

@@ -20,12 +20,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.BT7" >
-        <provider
-            android:name="com.example.bt7.MyContentProvider"
-            android:authorities="com.demo.user.provider"
-            android:enabled="true"
-            android:exported="true" />
-
         <activity
             android:name="com.example.bt7.MainActivity"
             android:exported="true" >
