@@ -19,8 +19,6 @@ import java.util.HashMap;
 public class RegistrationActivity extends AppCompatActivity {
 
     private EditText email, password, name;
-    private Button mRegister;
-    private TextView existaccount;
     private ProgressDialog progressDialog;
     private FirebaseAuth mAuth;
 
@@ -30,14 +28,15 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
         actionBar.setTitle("Create Account");
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
         email = findViewById(R.id.register_email);
         name = findViewById(R.id.register_name);
         password = findViewById(R.id.register_password);
-        mRegister = findViewById(R.id.register_button);
-        existaccount = findViewById(R.id.homepage);
+        Button mRegister = findViewById(R.id.register_button);
+        TextView existaccount = findViewById(R.id.homepage);
         mAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Register");
@@ -73,6 +72,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 progressDialog.dismiss();
                 FirebaseUser user = mAuth.getCurrentUser();
+                assert user != null;
                 String email = user.getEmail();
                 String uid = user.getUid();
                 HashMap<Object, String> hashMap = new HashMap<>();

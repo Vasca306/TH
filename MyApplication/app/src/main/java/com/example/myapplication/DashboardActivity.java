@@ -62,7 +62,6 @@ public class DashboardActivity extends AppCompatActivity {
                     fragmentTransaction2.replace(R.id.content, listFragment, "");
                     fragmentTransaction2.commit();
                     return true;
-
             }
             return false;
         }
