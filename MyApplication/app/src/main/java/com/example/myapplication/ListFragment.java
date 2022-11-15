@@ -31,16 +31,16 @@ public class ListFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         mList = new ArrayList<>();
-        mList.add(new ModalClass(R.drawable.ip07, "Iphone 7"));
-        mList.add(new ModalClass(R.drawable.ip11, "Iphone 11"));
-        mList.add(new ModalClass(R.drawable.ip12, "Iphone 12"));
-        mList.add(new ModalClass(R.drawable.ip13, "Iphone 13"));
-        mList.add(new ModalClass(R.drawable.ip14, "Iphone 14"));
-        mList.add(new ModalClass(R.drawable.ip14, "Iphone 15"));
-        mList.add(new ModalClass(R.drawable.ip13, "Iphone 16"));
-        mList.add(new ModalClass(R.drawable.ip12, "Iphone 17"));
-        mList.add(new ModalClass(R.drawable.ip11, "Iphone 18"));
-        mList.add(new ModalClass(R.drawable.ip07, "Iphone 19"));
+        mList.add(new ModalClass(R.drawable.cs, "Trịnh Trần Phương Tuấn", "Jack", "Việt Nam", "6"));
+        mList.add(new ModalClass(R.drawable.cs1, "Nguyễn Phước Thịnh", "Noo", "Việt Nam", "43"));
+        mList.add(new ModalClass(R.drawable.cs2, "Nguyễn Việt Hoàng", "Mono", "Việt Nam", "8"));
+        mList.add(new ModalClass(R.drawable.cs3, "Hồ Thị Ngọc Hà", "Hà", "Việt Nam", "10"));
+        mList.add(new ModalClass(R.drawable.cs4, "Phạm Đan Trường", "Trường", "Việt Nam", "21"));
+        mList.add(new ModalClass(R.drawable.cs5, "Nguyễn Thị N", "Soobin", "Việt Nam", "22"));
+        mList.add(new ModalClass(R.drawable.cs7, "Nguyễn Thị M", "M1", "Việt Nam", "12"));
+        mList.add(new ModalClass(R.drawable.cs4, "Nguyễn Thị E", "E", "Việt Nam", "11"));
+        mList.add(new ModalClass(R.drawable.cs3, "Nguyễn Thị Ái", "AI", "Việt Nam", "61"));
+        mList.add(new ModalClass(R.drawable.cs4, "Nguyễn  Nguyên", "NGUYEN", "Việt Nam", "156"));
 
     }
 

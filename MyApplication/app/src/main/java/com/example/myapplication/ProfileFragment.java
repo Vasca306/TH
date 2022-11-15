@@ -32,7 +32,6 @@ public class ProfileFragment extends Fragment {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     TextView nam, email;
-    FloatingActionButton fab;
     ProgressDialog pd;
     public ProfileFragment() {
 

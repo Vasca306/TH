@@ -15,6 +15,7 @@
         <activity android:name=".DashboardActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistrationActivity" />
+
         <activity
             android:name=".SplashScreen"
             android:exported="true">

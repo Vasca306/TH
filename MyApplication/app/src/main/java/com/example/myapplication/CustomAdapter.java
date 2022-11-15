@@ -8,6 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
@@ -35,6 +38,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         holder.imageView.setImageResource(mList.get(position).getImage());
         holder.textView.setText(mList.get(position).getText());
+        holder.textView1.setText(mList.get(position).getText1());
+        holder.textView2.setText(mList.get(position).getText2());
+        holder.textView3.setText(mList.get(position).getText3());
+
 
     }
 
@@ -44,16 +51,23 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         return mList.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imageView;
         TextView textView;
+        TextView textView1;
+        TextView textView2;
+        TextView textView3;
+
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.layoutimageid);
             textView = itemView.findViewById(R.id.nameTextViewID);
+            textView1 = itemView.findViewById(R.id.nameTextView1);
+            textView2 = itemView.findViewById(R.id.textView2);
+            textView3 = itemView.findViewById(R.id.textView3);
 
         }
     }
